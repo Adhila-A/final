@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Table </title>			
+</head>
+<body>
+		<div >
+			<table>
+        <tr>
+				{% for table in tables %}
+				<td>{{ table|safe }}</td>						
+				{% endfor %}	
+				</tr>
+			</table>
+            <br><br>
+			<form action="/download" method="POST">
+				<button>download</button>
+			
+			</form>
+</body>
+</html>
